@@ -252,14 +252,10 @@
             </plugin>
 
             <plugin>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0</version>
-                <configuration>
-                    <skipTests>${unit-tests.skip}</skipTests>
-                    <excludes>
-                        <exclude>**/*IT.java</exclude>
-                    </excludes>
-                </configuration>
+          	<groupId>org.apache.maven.plugins</groupId>
+          	<artifactId>maven-surefire-plugin</artifactId>
+          	<version>3.0</version>
+		<type>jar</type>
             </plugin>
 
             <plugin>
